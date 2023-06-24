@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+  <!--MENU PRINCIPAL HORIZONTAL-->
+  <header class="header">
+    <nav id="menu-h">
+        <ul>
+            <li><a href="../techdog hoje/index.html"><img src="./images/favicon.ico" ></a></li>
+            <li><a href="../techdog hoje/index.html">Home</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><div class="group">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                <input placeholder="Pesquisar" type="search" class="input">
+              </div></li>
+            <li><a href="./entrar.html">Entrar</a></li> 
+        </ul>
+    </nav>
+</header>
+   
+   <body>
+   <div class="slideshow-container">
+   
+   <div class="mySlides fade">
+      <img src="./images/banner1.png" style="width:100%; height: 70%">
+   </div>
+   
+   <div class="mySlides fade">
+      <img src="./images/banner2.png" style="width:100%; height: 70%">
+   </div>
+   
+   <div class="mySlides fade">
+     <img src="./images/banner1.png" style="width:100%;height: 70%">
+   </div>
+   
+   <a class="prev" onclick="plusSlides(-1)">❮</a>
+   <a class="next" onclick="plusSlides(1)">❯</a>
+   
+   </div>
+   <br>
+   
+   <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span> 
+     <span class="dot" onclick="currentSlide(2)"></span> 
+     <span class="dot" onclick="currentSlide(3)"></span> 
+   </div>
+   
+   <script>
+       let slideIndex = 1;
+       showSlides(slideIndex);
+       
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+       
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+       
+       function showSlides(n) {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+         }
+         for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+       }
+       </script>
+       <br>    
+<div><h1><center>CONFIRA NOSSAS PROMOÇÕES!</center></h1></div>
+<div class="row_flipcard">
+ <div class="flip-card">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img src="https://images.tcdn.com.br/img/img_prod/1067591/alimentador_automatico_pet_dogis_tech_com_programador_de_refeicoes_camera_full_hd_wi_fi_aplicativo_6_13_1_d6e9f5e3f6d974be5be25745d81535a4.jpg" alt="Denim Jeans" style="width:50%">
+         <p class="title">Alimentador Automático Pet Dogis Tech</p>
+         <p class="price">R$899.99</p>
+         <p>Saiba mais</p>
+     </div>
+     <div class="flip-card-back">
+         <p class="title">Descrição</p>
+         <p>com Programador de Refeições Câmera Full HD Wi-Fi Aplicativo 6 Litros..</p>
+     </div>
+   </div>
+ </div>
+ <div class="flip-card">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img src="https://images.tcdn.com.br/img/img_prod/1067591/alimentador_automatico_pet_dogis_tech_com_programador_de_refeicoes_camera_full_hd_wi_fi_aplicativo_6_13_1_d6e9f5e3f6d974be5be25745d81535a4.jpg" alt="Denim Jeans" style="width:50%">
+         <p class="title">Alimentador Automático Pet Dogis Tech</p>
+         <p class="price">R$899.99</p>
+         <p>Saiba mais</p>
+     </div>
+     <div class="flip-card-back">
+         <p class="title">Descrição</p>
+         <p>com Programador de Refeições Câmera Full HD Wi-Fi Aplicativo 6 Litros..</p>
+     </div>
+   </div>
+ </div>
+ <div class="flip-card">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img src="https://images.tcdn.com.br/img/img_prod/1067591/alimentador_automatico_pet_dogis_tech_com_programador_de_refeicoes_camera_full_hd_wi_fi_aplicativo_6_13_1_d6e9f5e3f6d974be5be25745d81535a4.jpg" alt="Denim Jeans" style="width:50%">
+         <p class="title">Alimentador Automático Pet Dogis Tech</p>
+         <p class="price">R$899.99</p>
+         <p>Saiba mais</p>
+     </div>
+     <div class="flip-card-back">
+         <p class="title">Descrição</p>
+         <p>com Programador de Refeições Câmera Full HD Wi-Fi Aplicativo 6 Litros..</p>
+     </div>
+   </div>
+ </div>
+ <div class="flip-card">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img src="https://images.tcdn.com.br/img/img_prod/1067591/alimentador_automatico_pet_dogis_tech_com_programador_de_refeicoes_camera_full_hd_wi_fi_aplicativo_6_13_1_d6e9f5e3f6d974be5be25745d81535a4.jpg" alt="Denim Jeans" style="width:50%">
+         <p class="title">Alimentador Automático Pet Dogis Tech</p>
+         <p class="price">R$899.99</p>
+         <p>Saiba mais</p>
+     </div>
+     <div class="flip-card-back">
+         <p class="title">Descrição</p>
+         <p>com Programador de Refeições Câmera Full HD Wi-Fi Aplicativo 6 Litros..</p>
+     </div>
+   </div>
+ </div>
+ <div class="flip-card">
+   <div class="flip-card-inner">
+     <div class="flip-card-front">
+       <img src="https://images.tcdn.com.br/img/img_prod/1067591/alimentador_automatico_pet_dogis_tech_com_programador_de_refeicoes_camera_full_hd_wi_fi_aplicativo_6_13_1_d6e9f5e3f6d974be5be25745d81535a4.jpg" alt="Denim Jeans" style="width:50%">
+         <p class="title">Alimentador Automático Pet Dogis Tech</p>
+         <p class="price">R$899.99</p>
+         <p>Saiba mais</p>
+     </div>
+     <div class="flip-card-back">
+         <p class="title">Descrição</p>
+         <p>com Programador de Refeições Câmera Full HD Wi-Fi Aplicativo 6 Litros..</p>
+     </div>
+ </div>
+</div>
+</div>
+
+<div class="column">
+     <div class="card">
+               <img src="https://images.tcdn.com.br/img/img_prod/1067591/alimentador_automatico_pet_dogis_tech_com_programador_de_refeicoes_camera_full_hd_wi_fi_aplicativo_6_13_1_d6e9f5e3f6d974be5be25745d81535a4.jpg" alt="Denim Jeans" style="width:100%">
+               <h2>Alimentador Automático Pet Dogis Tech</h2>
+               <p class="price">R$899.99</p>
+               <p>com Programador de Refeições Câmera Full HD Wi-Fi Aplicativo 6 Litros..</p><br>
+               <p><button>Adicione no carrinho</button></p>
+     </div>
+</div>
+<div class="column">
+           <div class="card">
+               <img src="https://images.tcdn.com.br/img/img_prod/1067591/alimentador_automatico_pet_dogis_lite_com_programador_de_refeicoes_capacidade_de_6_porcoes_17_1_0cdedb11ca6716b962eacfc5d61a33c3.jpg" alt="Denim Jeans" style="width:100%">
+               <h2>Alimentador Automático Pet Dogis Lite</h2>
+               <p class="price">R$299.99</p>
+               <p>com Programador de Refeições Capacidade de 6 Porções..</p><br>
+               <p><button>Adicione no carrinho</button></p>
+             </div>
+</div>
+<div class="column">
+           <div class="card">
+               <img src="https://cdn.shopify.com/s/files/1/0293/3024/3663/products/Weasy-Oasis-5_720x.jpg?v=1647454602" style="width:100%">
+               <h2>WEASY OÁSIS</h2>
+               <p class="price">R$359.99</p>
+               <p> bebedouro inteligente garante água limpa, fresca e abundante dia e noite..</p><br>
+               <p><button>Adicione no carrinho</button></p>
+             </div>
+</div>
+<div class="column">
+           <div class="card">
+               <img src="https://cdn.shopify.com/s/files/1/0293/3024/3663/files/9_99c58412-009d-4aae-92a4-4b957ade3157_540x.jpg?v=1684346054" style="width:100%">
+               <h2>WEASY CÃO BANHEIRO</h2>
+               <p class="price">R$549.99</p>
+               <p>Banheiro inteligente para cachorro com escoamento direto para o ralo ou para Weasy Bag...</p><br>
+               <p><button>Adicione no carrinho</button></p>
+           </div>
+</div>          
+<div class="column">
+       <div class="card">
+           <img src="https://cdn.shopify.com/s/files/1/0612/6010/3926/products/Se3a4f6dacded42abb01307c279f27dfe5_dad0ea3b-e105-4861-ba38-8370ef0bd9e3_500x500_crop_center.jpg?v=1674771636" style="width:100%">
+           <h2>Lançador Automático de Bolinha para Cachorro</h2>
+           <p class="price">R$729.99</p>
+           <p>O Lançador Automático de Bolinha para Cachorros é o brinquedo perfeito para garantir a momentos de alegria para o seu pet...</p><br>
+           <p><button>Adicione no carrinho</button></p>
+       </div>
+</div>
+<div class="column">
+       <div class="card">
+           <img src="https://ae01.alicdn.com/kf/S2d3279d8c5ac49168f1917b51fc0a66dW/Brinquedos-espertos-do-gato-do-rolamento-autom-tico-dos-brinquedos-bondes-da-bola-do-gato-para.jpg_Q90.jpg_.webp" style="width:100%">
+           <h2>Bola de brinquedo interativa inteligente</h2>
+           <p class="price">R$49.99</p>
+           <p>Brinquedos espertos do gato do rolamento automático dos brinquedos bondes da bola do gato para o treinamento dos gatos brinquedos jogo interativo interno..</p><br>
+           <p><button>Adicione no carrinho</button></p>
+         </div>
+</div>
+<div class="column">
+       <div class="card">
+           <img src="https://http2.mlstatic.com/D_NQ_NP_690960-CBT52676038136_122022-O.webp" style="width:100%">
+           <h2>Tapete Pet Térmico Elétrico</h2>
+           <p class="price">R$199.99</p>
+           <p> Pet Heating Pad Mat for dogs, cats and puppies 45x45cm Temperature Termopet Easy..</p><br>
+           <p><button>Adicione no carrinho</button></p>
+         </div>
+</div>
+<div class="column">
+       <div class="card">
+           <img src="https://a-static.mlcdn.com.br/800x560/baba-pet-3-antenas-robo-full-hd-1080p-wifi-sem-fio-gira-360o-audio-visao-noturna-onvif-e-think/afcameras/ee480a6ca39e11eb83fb4201ac1850f5/706af43c5de8eddc8948ea5acfa84e20.jpeg" style="width:100%">
+           <p class="price">R$169.99</p>
+           <p>baba Pet 3 Antenas            
+           <h2>Camera Para Monitorar Pet </h2>
+           <p>Robô Full HD 1080P Wifi Sem Fio Gira 360º Áudio Visão Noturna...</p><br>
+           <p><button>Adicione no carrinho</button></p>
+         </div>
+</div>
+</div>
+</div>
+
+<footer>  
+   <div class="footer"> <CENTER><img src="./images/4.png" style="width: 5%;">
+       <p>Author: Ana Claudia das Neves Silva</p></CENTER>
+   </div>
+ </footer>
+</body>
+</html>
